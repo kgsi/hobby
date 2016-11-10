@@ -1,0 +1,22 @@
+@import "https://fonts.googleapis.com/css?family=Oswald|Roboto:700";
+
+.limiter {
+  font-family: 'Oswald', sans-serif;
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 9999;
+  color: #FFF;
+  font-size: 30px;
+  background: rgba(#111, 0.6);
+  padding: 10px 30px;
+  border-radius: 3px;
+  box-shadow:-2px 0px 20px 3px rgba(#111, 0.2);
+
+  &::before {
+    content: "limiter: ";
+    display: inline-block;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+}

@@ -1,0 +1,82 @@
+@charset "UTF-8";
+
+/* reset.css */
+
+/* global reset */
+html {
+	overflow-y: scroll;
+}
+body,h1,h2,h3,h4,h5,h6,p,div,dl,dt,dd,form,fieldset,input,textarea,pre,blockquote,th,td {
+	margin: 0;
+	padding: 0;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0px;
+}
+caption,th {
+	text-align: left;
+}
+fieldset {
+	border: 0;
+}
+img {
+	border: 0;
+	vertical-align: bottom;
+} 
+a {outline: 0;}
+
+/* html5tag */
+header,footer,nav,section,article,figure,aside {
+	display: block;
+	margin: 0;
+	padding: 0;
+}
+
+/* for responsive */
+.forpc {
+	display: block;
+}
+.forsp {
+	display: none;
+}
+html,body,p,h1,h2,h3,h4,h5,h6,div,span,ul,ol,li,dl,dt,dd,table,th,td,input,textarea,section,article,nav,a {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	-o-box-sizing: content-box;
+	-ms-box-sizing: content-box;
+	box-sizing: content-box;
+}
+img {
+}
+
+/* clearfix */
+.clearfix {
+	display: block;
+}
+.clearfix:after {
+	content: "";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	height: 0;
+	font-size: 0;
+	line-height: 0;
+}
+.clearfix {
+	*overflow: hidden;
+	*zoom: 1;
+}
+.clearfix:not(:target) {
+	/* overflow: hidden\9; */
+	/* zoom: 1\9; */
+}
+/* hides from ie-mac \*/
+* html .clearfix{
+	height: 1%;
+	overflow: visible;
+}
+/* end hide from ie-mac */
+.clear {
+	clear: both;
+}
