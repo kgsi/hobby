@@ -21,7 +21,7 @@
   "content_scripts": [
     {
       "matches": ["<all_urls>"],
-      "js": ["js/libs/jquery.js", "js/libs/createjs.js", "js/content.js"],
+      "js": ["js/libs/jquery.js", "js/libs/createjs.js", "js/libs/jquery.countdown.js", "js/content.js"],
       "run_at": "document_start"
     }
   ],

@@ -1,18 +1,111 @@
 @import "https://fonts.googleapis.com/css?family=Oswald|Roboto:700";
-.limiter {
+.btn, .limiter5min-shutdown .btn-attention, .limiter5min-shutdown .btn-primary {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 13px;
+  line-height: 1.6;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  touch-action: manipulation;
+  cursor: pointer;
+  user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px; }
+  .btn.btn-small, .limiter5min-shutdown .btn-small.btn-attention, .limiter5min-shutdown .btn-small.btn-primary {
+    font-size: 17px;
+    padding: 10px 30px; }
+  .btn.btn-large, .limiter5min-shutdown .btn-large.btn-attention, .limiter5min-shutdown .btn-large.btn-primary {
+    font-size: 17px;
+    padding: 10px 30px; }
+  .btn.btn-xlarge, .limiter5min-shutdown .btn-xlarge.btn-attention, .limiter5min-shutdown .btn-xlarge.btn-primary {
+    font-size: 17px;
+    padding: 20px 100px;
+    border-radius: 8px; }
+  .btn-primary {
+    color: #FFFFFF;
+    background: #444444;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: #373737 0px 3px 0px 0px; }
+  .btn-attention {
+    color: #FFFFFF;
+    background: #f17d3d;
+    font-weight: bold;
+    text-decoration: none;
+    box-shadow: #ef6d25 0px 3px 0px 0px; }
+  .btn [class^="icon-"], .limiter5min-shutdown .btn-attention [class^="icon-"], .limiter5min-shutdown .btn-primary [class^="icon-"] {
+    margin-right: 5px; }
+  .btn:hover, .limiter5min-shutdown .btn-attention:hover, .limiter5min-shutdown .btn-primary:hover, .btn:focus, .limiter5min-shutdown .btn-attention:focus, .limiter5min-shutdown .btn-primary:focus, .btn.focus, .limiter5min-shutdown .focus.btn-attention, .limiter5min-shutdown .focus.btn-primary {
+    text-decoration: none;
+    opacity: 0.8; }
+  .btn:active, .limiter5min-shutdown .btn-attention:active, .limiter5min-shutdown .btn-primary:active, .btn.active, .limiter5min-shutdown .active.btn-attention, .limiter5min-shutdown .active.btn-primary {
+    outline: 0;
+    background-image: none;
+    box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+  .btn.disabled, .limiter5min-shutdown .disabled.btn-attention, .limiter5min-shutdown .disabled.btn-primary, .btn[disabled], .limiter5min-shutdown [disabled].btn-attention, .limiter5min-shutdown [disabled].btn-primary,
+  fieldset[disabled] .btn,
+  fieldset[disabled] .limiter5min-shutdown .btn-attention, .limiter5min-shutdown
+  fieldset[disabled] .btn-attention,
+  fieldset[disabled] .limiter5min-shutdown .btn-primary, .limiter5min-shutdown
+  fieldset[disabled] .btn-primary {
+    pointer-events: none;
+    opacity: 0.5;
+    box-shadow: none; }
+
+* {
+  box-sizing: border-box; }
+
+.limiter5min {
   font-family: 'Oswald', sans-serif;
   position: fixed;
+  min-width: 220px;
+  text-align: center;
   top: 20px;
   left: 20px;
   z-index: 9999;
   color: #FFF;
   font-size: 30px;
+  line-height: 30px;
   background: rgba(17, 17, 17, 0.6);
-  padding: 10px 30px;
+  padding: 10px 30px 10px 80px;
   border-radius: 3px;
-  box-shadow: -2px 0px 20px 3px rgba(17, 17, 17, 0.2); }
-  .limiter::before {
+  box-shadow: -2px 0px 20px 3px rgba(17, 17, 17, 0.2);
+  display: none; }
+  .limiter5min::before {
     content: "limiter: ";
-    display: inline-block;
-    font-size: 20px;
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    left: 20px;
+    font-size: 14px;
     padding-right: 10px; }
+
+.limiter5min-shutdown {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: table;
+  top: 0;
+  background: rgba(17, 17, 17, 0.95);
+  z-index: 10000; }
+  .limiter5min-shutdown-inner {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle; }
+    .limiter5min-shutdown-inner::before {
+      color: #FFF;
+      font-family: 'Oswald', sans-serif;
+      content: "5MIN END";
+      display: block;
+      font-size: 40px;
+      padding: 30px 0;
+      text-align: center; }
+  .limiter5min-shutdown .btn, .limiter5min-shutdown .btn-attention, .limiter5min-shutdown .btn-primary {
+    margin: 0 10px; }
+  .limiter5min-shutdown .btn-attention {
+    width: 20%; }
+  .limiter5min-shutdown .btn-primary {
+    width: 20%; }

@@ -7,7 +7,7 @@ $color-tertiary:          #7ea6c0 !default;
 //basic color
 $color-black:             #111111 !default;
 $color-white:             #FFFFFF !default;
-$color-gray:              #666666 !default;
+$color-gray:              #444444 !default;
 $color-lightgray:         #e5eaee !default;
 $color-blue:              $color-primary !default;
 $color-deepblue:          $color-secondary !default;
@@ -15,7 +15,7 @@ $color-lightblue:         $color-tertiary !default;
 $color-orange:            #f17d3d !default;
 $color-red:               #BE1900 !default;
 //button color
-$btn-color-normal:        $color-primary;
+$btn-color-primary:       $color-gray;
 $btn-color-attention:     $color-orange;
 // line
 $line-color-blue:         $color-blue;

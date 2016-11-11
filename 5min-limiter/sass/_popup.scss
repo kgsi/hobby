@@ -1,0 +1,20 @@
+@import "https://fonts.googleapis.com/css?family=Oswald|Roboto:700";
+
+.wrapper {
+	box-sizing: border-box;
+	width: 250px;
+	padding: 10px;
+
+	.label {
+		width: 100%;
+		font-size: 20px;
+		font-family: 'Oswald', sans-serif;
+		text-align: center;
+		margin-bottom: 5px;
+	}
+
+	.btn {
+		box-sizing: border-box;
+		width: 100%;
+	}
+}

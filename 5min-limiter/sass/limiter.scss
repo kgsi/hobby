@@ -1,22 +1,75 @@
 @import "https://fonts.googleapis.com/css?family=Oswald|Roboto:700";
+@import "variables";
+@import "modules/buttons";
 
-.limiter {
+* {
+  box-sizing: border-box;
+}
+
+.limiter5min {
   font-family: 'Oswald', sans-serif;
   position: fixed;
+  min-width: 220px;
+  text-align: center;
   top: 20px;
   left: 20px;
   z-index: 9999;
   color: #FFF;
   font-size: 30px;
+  line-height: 30px;
   background: rgba(#111, 0.6);
-  padding: 10px 30px;
+  padding: 10px 30px 10px 80px;
   border-radius: 3px;
   box-shadow:-2px 0px 20px 3px rgba(#111, 0.2);
+  display: none;
 
   &::before {
     content: "limiter: ";
-    display: inline-block;
-    font-size: 20px;
+    display: block;
+    position: absolute;
+    opacity: 0.8;
+    left: 20px;
+    font-size: 14px;
     padding-right: 10px;
+  }
+}
+
+.limiter5min-shutdown {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: table;
+  top: 0;
+  background:  rgba(#111, 0.95);
+  z-index: 10000;
+
+  &-inner {
+    text-align: center;
+    display: table-cell;
+    vertical-align: middle;
+
+    &::before {
+      color: #FFF;
+      font-family: 'Oswald', sans-serif;
+      content: "5MIN END";
+      display: block;
+      font-size: 40px;
+      padding: 30px 0;
+      text-align: center;
+    }
+  }
+
+  .btn {
+    margin: 0 10px;
+  }
+
+  .btn-attention {
+    width: 20%;
+    @extend .btn;
+  }
+
+  .btn-primary {
+    width: 20%;
+    @extend .btn;
   }
 }
