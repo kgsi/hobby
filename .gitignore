@@ -1,9 +1,10 @@
 .DS_Store
 config.codekit
+config.codekit3
 ._*
 .Trashes
 
-# Ruby 
+# Ruby
 *.gem
 *.rbc
 .bundle
