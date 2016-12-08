@@ -15,6 +15,7 @@ config.codekit3
 bower_components
 node_modules
 release
+npm-debug.log
 
 # YARD artifacts
 .yardoc

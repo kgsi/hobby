@@ -1,0 +1,16 @@
+{
+  "name": "amazonDashButton-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dash":"sudo node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scan": "dash-button scan"
+  },
+  "author": "kgsi",
+  "license": "ISC",
+  "dependencies": {
+    "dash-button": "^2.0.0"
+  }
+}
